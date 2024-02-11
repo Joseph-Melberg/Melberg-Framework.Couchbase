@@ -24,7 +24,7 @@ public class BucketFactory : IBucketFactory
             options.Value.Password);
         clusterTask.Wait();
         _cluster = clusterTask.Result;
-        MakeBucket(options.Value.Bucket).Wait();
+        MakeBucket(options.Value).Wait();
         
         var bucketTask = GetBucketSync(options.Value.Bucket);
         bucketTask.Wait();
@@ -32,12 +32,16 @@ public class BucketFactory : IBucketFactory
         _bucket = bucketTask.Result;
 
     }
-    private async Task MakeBucket(string name)
+    private async Task MakeBucket(BucketFactoryOptions options)
     {
         
         var bucketSettings = new BucketSettings
         {
-            Name = name
+            Name = options.Bucket,
+            RamQuotaMB = options.RamQuotaMB,
+            NumReplicas = 0,
+            BucketType = BucketType.Couchbase, 
+
         };
         try
         {
