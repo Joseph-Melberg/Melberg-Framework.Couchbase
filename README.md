@@ -1,4 +1,4 @@
-# Melberg-Framework.Couchbase
+# MelbergFramework.Infrastructure.Couchbase
 Couchbase implementation for Melberg-Framework
 
 # Overview
