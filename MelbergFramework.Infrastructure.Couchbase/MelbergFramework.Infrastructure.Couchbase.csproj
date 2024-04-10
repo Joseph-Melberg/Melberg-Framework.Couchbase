@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<PackageId>MelbergFramework.Infrastructure.Couchbase</PackageId>
 		<Version>1.0.2</Version>
 		<Authors>Joseph Melberg</Authors>
@@ -12,10 +12,10 @@
 	</PropertyGroup>
   <ItemGroup>
     <PackageReference Include="CouchbaseNetClient" Version="3.4.14" />
-    <PackageReference Include="MelbergFramework.Core" Version="6.0.67" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="6.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="6.0.0" />
+    <PackageReference Include="MelbergFramework.Core" Version="8.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="8.0.0" />
   </ItemGroup>
 
 </Project>

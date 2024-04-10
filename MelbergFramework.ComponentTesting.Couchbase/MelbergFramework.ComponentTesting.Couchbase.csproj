@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MelbergFramework.Infrastructure.Couchbase\MelbergFramework.Infrastructure.Couchbase.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MelbergFramework.Core.ComponentTesting" Version="8.0.4" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

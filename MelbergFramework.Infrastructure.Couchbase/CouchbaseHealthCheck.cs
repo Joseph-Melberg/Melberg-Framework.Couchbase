@@ -1,5 +1,5 @@
 using Couchbase;
-using MelbergFramework.Core.Health;
+using MelbergFramework.Core.HealthCheck;
 
 namespace MelbergFramework.Infrastructure.Couchbase;
 

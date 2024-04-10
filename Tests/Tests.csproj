@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\MelbergFramework.Infrastructure.Couchbase\MelbergFramework.Infrastructure.Couchbase.csproj" />
+    <ProjectReference Include="..\MelbergFramework.ComponentTesting.Couchbase\MelbergFramework.ComponentTesting.Couchbase.csproj" />
+    <ProjectReference Include="..\Demo\Demo.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="LightBDD.MsTest3" Version="3.7.0" />
+    <PackageReference Include="MelbergFramework.Application" Version="8.0.6" />
+    <PackageReference Include="MelbergFramework.Core" Version="8.0.6" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+    <PackageReference Include="xunit" Version="2.7.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.0.4" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.0.4" />
+    <PackageReference Include="coverlet.collector" Version="1.3.0" />
+  </ItemGroup>
+</Project>

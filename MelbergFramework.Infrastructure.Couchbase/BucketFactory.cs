@@ -1,7 +1,5 @@
 using Couchbase;
-using Couchbase.KeyValue;
 using Couchbase.Management.Buckets;
-using Couchbase.Management.Collections;
 using MelbergFramework.Infrastructure.Couchbase.Configuration;
 using Microsoft.Extensions.Options;
 

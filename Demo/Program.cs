@@ -1,8 +1,5 @@
-using Couchbase;
-using Couchbase.KeyValue;
-using Couchbase.Management.Collections;
 using Demo.Infrastructure;
-using MelbergFramework.Infrastructure.Couchbase;
+using MelbergFramework.Application;
 
 namespace Demo;
 
@@ -10,18 +7,14 @@ internal class Program
 {
     private static async Task Main(string[] args)
     {
-        var builder = WebApplication.CreateBuilder(args);
-        CouchbaseModule.RegisterCouchbaseBucket<IDemoCouchbaseRepository,DemoCouchbaseRepository>(builder.Services);
-        var app = builder.Build();
-        
-        var serv = app.Services.GetService<IDemoCouchbaseRepository>();
-        
-        await serv.Test();
 
+        var host = MelbergHost
+            .CreateHost<AppRegistrator>()
+            .Build();
 
-        app.MapGet("/", () => "Hello World!");
+        var repo = host.Services.GetService<IDemoCouchbaseRepository>();
 
-
+        await repo.Remove();
         //app.Run();
     }
 }
