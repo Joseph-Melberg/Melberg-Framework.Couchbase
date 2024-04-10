@@ -1,4 +1,4 @@
-using MelbergFramework.Core.Health;
+using MelbergFramework.Core.HealthCheck;
 using MelbergFramework.Infrastructure.Couchbase.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -18,7 +18,6 @@ public static class CouchbaseModule
 
         services.AddTransient<ITRepository,TRepository>();
         
-        services.AddSingleton<IBucketFactory,BucketFactory>();
         services.AddSingleton<IHealthCheck, CouchbaseHealthCheck>();
 
     }

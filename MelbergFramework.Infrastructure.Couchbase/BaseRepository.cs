@@ -1,5 +1,4 @@
-﻿using Couchbase;
-using Couchbase.KeyValue;
+﻿using Couchbase.KeyValue;
 using Couchbase.Management.Collections;
 
 namespace MelbergFramework.Infrastructure.Couchbase;

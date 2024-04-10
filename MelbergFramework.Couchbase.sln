@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelbergFramework.Infrastruc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{07C446F6-254E-481C-8415-C75DB5C64EC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelbergFramework.ComponentTesting.Couchbase", "MelbergFramework.ComponentTesting.Couchbase\MelbergFramework.ComponentTesting.Couchbase.csproj", "{9B8CCC4C-875D-4F22-9C3D-9355D5BB800A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{26BE9A9A-8230-40F9-A2A7-9D244DE73691}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{07C446F6-254E-481C-8415-C75DB5C64EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07C446F6-254E-481C-8415-C75DB5C64EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07C446F6-254E-481C-8415-C75DB5C64EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B8CCC4C-875D-4F22-9C3D-9355D5BB800A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B8CCC4C-875D-4F22-9C3D-9355D5BB800A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B8CCC4C-875D-4F22-9C3D-9355D5BB800A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B8CCC4C-875D-4F22-9C3D-9355D5BB800A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26BE9A9A-8230-40F9-A2A7-9D244DE73691}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26BE9A9A-8230-40F9-A2A7-9D244DE73691}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26BE9A9A-8230-40F9-A2A7-9D244DE73691}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26BE9A9A-8230-40F9-A2A7-9D244DE73691}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -6,14 +6,14 @@ public class BucketFactoryOptions
 {
     public static string Section => "Couchbase";
     [Required]
-    public string Url {get; set;}
+    public string Url {get; set;} = string.Empty;
     [Required]
-    public string Username {get; set;}
+    public string Username {get; set;} = string.Empty;
     [Required]
-    public string Password {get; set;}
+    public string Password {get; set;} = string.Empty;
     [Required]
-    public string Bucket {get; set;}
+    public string Bucket {get; set;} = string.Empty;
     [Required]
     [Range(100,1000)]
-    public int RamQuotaMB {get ;set;}
+    public int RamQuotaMB {get ;set;} = 100;
 }
